@@ -6,11 +6,14 @@ function main() {
   try {
     const { amount, from, to } = parseArgs(process.argv);
 
-    const { base, rates } = loadRates();
+    const { base, rates, decimals } = loadRates();
 
     const result = convert(amount, from, to, rates, base);
 
-    console.log(formatResult(amount, from, result, to));
+    const output = formatResult(amount, from, result, to, decimals);
+
+    console.log(output);
+    
   } catch (err) {
     console.error("Error:", err.message);
     process.exit(1);

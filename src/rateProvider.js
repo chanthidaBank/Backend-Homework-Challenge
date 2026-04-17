@@ -7,6 +7,7 @@ export function loadRates() {
  
   return {
     base: data.base,
-    rates: data.rates
+    rates: data.rates,
+    decimals: data.decimals || {}
   };
 }
