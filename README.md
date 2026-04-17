@@ -22,15 +22,15 @@ node program.js <amount> <from_currency> to <to_currency>
 
 ```bash
 # Convert 1000 THB to BTC
-node src/index.js 1000 thb to btc
+node program.js 1000 thb to btc
 # Output: 1000 THB = 0.00059400 BTC
 
 # Convert 50 USD to THB
-node src/index.js 50 usd to thb
+node program.js 50 usd to thb
 # Output: 50 USD = 1851.85 THB
 
 # Convert 0.01 BTC to USD
-node src/index.js 0.01 btc to usd
+node program.js 0.01 btc to usd
 # Output: 0.01 BTC = 454.55 USD
 ```
 
