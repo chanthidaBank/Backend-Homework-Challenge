@@ -15,7 +15,7 @@ A command-line interface (CLI) program that converts between currencies offline.
 ## Usage
 
 ```bash
-node src/index.js <amount> <from_currency> to <to_currency>
+node program.js <amount> <from_currency> to <to_currency>
 ```
 
 ### Examples
