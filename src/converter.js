@@ -6,11 +6,9 @@ export function convert(amount, from, to, rates, base) {
     throw new Error(`Unsupported currency: ${to}`);
   }
 
-  // convert to base first
-  const amountInBase = amount / rates[from];
+  const amountInBase = amount * rates[base] / rates[from];
 
-  // then base → target
-  const result = amountInBase * rates[to];
-
+  const result = amountInBase * rates[to] / rates[base];
+ 
   return result;
 }
