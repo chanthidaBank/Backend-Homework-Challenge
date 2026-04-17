@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "type": "module",
   "description": "CLI Currency Converter - Backend Test",
-  "main": "src/index.js",
+  "main": "program.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node program.js",
     "test": "node --test test/**/*.test.js"
-  },
-  "keywords": ["currency", "converter", "cli"],
-  "author": "",
-  "license": "ISC"
+  }
 }
